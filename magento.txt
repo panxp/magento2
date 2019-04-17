@@ -1,0 +1,18 @@
+http://www.zuimoban.com/php/magento/11535.html
+
+https://www.mageplaza.com/magento-2-module-development/how-to-create-crud-model-magento-2.html 国外好用教程
+
+php -d memory_limit=2G bin/magento setup:di:compile
+
+php bin/magento cache:clean
+
+php bin/magento deploy:mode:set developer 空白可以解决
+
+php bin/magento setup:static-content:deploy -f
+
+php bin/magento cache:clean [type] ... [type]
+php bin/magento cache:flush [type] ... [type]
+
+php bin/magento indexer:reindex
+
+php bin/magento module:enable Mageplaza_HelloWorld
